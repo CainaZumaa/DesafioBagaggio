@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom,  #27282D, #290944);
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 23px;
+    color: rgb(121, 46, 165);
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 5px 15px 8px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .h1 {
+      font-size: 2rem;
+      letter-spacing: 10px;
+    }
+}
+
+.form {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form img {
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+}
+
+.form input[type=text] {
+    display: block;
+    border-radius: 17px;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    margin: 10px auto;
+    max-width: 80%;
+    font-size: 16px;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.form input[type=submit] {
+    padding-left: 10px;
+    display: block;
+    border-radius: 20px;
+    margin: 10px auto;
+    font-size: 16px;
+    max-width: 80%;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: #842494;
+    height: 35px;
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type=submit]:hover {
+    background-color: #4c247c;
+}
+
+a {
+    color: #4c247c; /* Define a cor padrão do link (azul) */
+    text-decoration: none; /* Remove a decoração de sublinhado */
+}

@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4B0082; 
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Estilos para a logo no canto superior esquerdo */
+.logo h1 {
+    margin-bottom: 05%;
+}
+
+/* Estilos para a navegação no canto superior direito */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 50%;
+    padding-bottom: 32%;
+    background-color: rgb(140, 0, 255); /* Cor de fundo branca para o conteúdo principal */
+}
+
+#users {
+    font-size: 150%;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    background-color: rgb(140, 0, 255);
+    padding: 1%;
+}
+
+#cadastro {
+    font-size: 150%;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    background-color: rgb(140, 0, 255);
+    padding-left: 40%;
+}
+
+#avatarUsuario {
+    width: 15%; 
+    height: 15%; 
+    border-radius: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.username {
+    font-size: 24px;
+}
+
+#mostrarFormulario {
+    background-color: rgb(140, 0, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#voltarHome {
+    background-color: rgb(140, 0, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+#mostrarFormulario:hover {
+    background-color: rgb(119, 0, 255);
+}
+
+/* Estilos para o formulário */
+
+#formulario {
+    display: none;
+    background-color: rgba(140, 0, 255, 0.397);
+    padding: 20px;
+    margin: 20px 0; 
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+#formulario h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#formulario label {
+    font-weight: bold;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario button[type="submit"]:hover {
+    background-color: rgb(119, 0, 255);
+}
+
+#formularioEndereco {
+    background-color: rgba(140, 0, 255, 0.397);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 0px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+#formularioEndereco h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#formularioEndereco label {
+    font-weight: bold;
+}
+
+#formularioEndereco input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formularioEndereco button[type="submit"] {
+    background-color: rgb(140, 0, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formularioEndereco button[type="submit"]:hover {
+    background-color: rgb(119, 0, 255);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Github-logo.svg.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bagaggio</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BAGAGGIO</h1>
+            <h2 class="username">Nome de Usuário</h2>
+            <img id="avatarUsuario" src="" alt="Avatar do Usuário">
+            <h3>Estagiário</h3>
+        </div>
+        <nav>
+            <ul>
+                <button id="mostrarFormulario">Cadastrar Usuário</button>
+                <li><a href="index.html" id="deslogar">Deslogar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p id="users">Usuários:</p>
+
+    <div id="formulario" onsubmit="exibirTabela(event)" style="display: none;">
+        <h2>Cadastrar Usuário</h2>
+        <form id="formularioUsuario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required><br>
+
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades" name="habilidades" required></textarea><br>
+
+            <button type="button" id="voltarHome">Voltar para a Home</button>
+        </form>
+    </div>
+
+    <div id="formularioEndereco" style="display: none;">
+        <h2>Preencha o endereço</h2>
+        <form id="formularioEnderecoUsuario">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required><br>
+
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required><br>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <table id="tabelaUsuarios" style="display: none;">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Rua</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>UF</th>
+                <th>CEP</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaUsuariosBody"></tbody>
+    </table>
+
+    <main></main>
+</body>
+</html>
